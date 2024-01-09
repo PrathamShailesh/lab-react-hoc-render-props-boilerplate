@@ -1,15 +1,19 @@
 import './App.css';
-import LikeImage from './components/LikeImage';
-import LikePost from './components/LikePost';
+import Parentsome from './components/Parentsome';
+import HocLikeImage from './HOC/HocLikeImage';
+import HocLikePost from './HOC/HocLikePost';
+import Parent from './HOC/Parent';
+
+
 
 function App() {
   return (
     <div>
-      <h3>Some Blog</h3>
-      <div className='buttons'>
-        <LikePost/>
-        <LikeImage/>
-      </div>
+        <Parentsome/>
+        {/* <HocLikeImage/>
+        <HocLikePost/> */}
+        <Parent/>
+   
     </div>
   );
 }
