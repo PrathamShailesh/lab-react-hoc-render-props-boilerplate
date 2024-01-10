@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const withLikeCounter = (WrappedComponent, initialCount = 0) => {
-  return class WithLikeCounter extends React.Component {
+const hocFunction = (HocComponent, initialCount = 0) => {
+  return class hocFunction extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -18,7 +18,7 @@ const withLikeCounter = (WrappedComponent, initialCount = 0) => {
     render() {
       return (
         <>
-        <WrappedComponent
+        <HocComponent
           {...this.props}
           likeCounter={this.state.likeCounter}
           handleLikeCount={this.handleLikeCount}
@@ -28,4 +28,4 @@ const withLikeCounter = (WrappedComponent, initialCount = 0) => {
   };
 };
 
-export default withLikeCounter;
+export default hocFunction;

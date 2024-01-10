@@ -1,5 +1,5 @@
 import React from 'react';
-import withLikeCounter from './withLikeCounter';
+import hocFunction from './hocFunction';
 
 function HocLikePost({ likeCounter, handleLikeCount }) {
   return (
@@ -9,4 +9,4 @@ function HocLikePost({ likeCounter, handleLikeCount }) {
   );
 }
 
-export default withLikeCounter(HocLikePost);
+export default hocFunction(HocLikePost);

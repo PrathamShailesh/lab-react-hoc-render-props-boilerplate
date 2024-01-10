@@ -1,5 +1,5 @@
 import React from 'react';
-import withLikeCounter from './withLikeCounter';
+import hocFunction from './hocFunction';
 
 function HocLikeImage({ likeCounter, handleLikeCount }) {
   return (
@@ -9,4 +9,4 @@ function HocLikeImage({ likeCounter, handleLikeCount }) {
   );
 }
 
-export default withLikeCounter(HocLikeImage);
+export default hocFunction(HocLikeImage);

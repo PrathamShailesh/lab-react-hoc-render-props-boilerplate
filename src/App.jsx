@@ -1,18 +1,20 @@
 import './App.css';
 import Parentsome from './components/Parentsome';
-import HocLikeImage from './HOC/HocLikeImage';
-import HocLikePost from './HOC/HocLikePost';
 import Parent from './HOC/Parent';
+import ParentRender from './RenderProps/ParentRender';
 
 
 
 function App() {
   return (
-    <div>
+    <div className='all'>
         <Parentsome/>
-        {/* <HocLikeImage/>
-        <HocLikePost/> */}
-        <Parent/>
+
+        <Parent/> 
+
+        <ParentRender/>
+
+
    
     </div>
   );

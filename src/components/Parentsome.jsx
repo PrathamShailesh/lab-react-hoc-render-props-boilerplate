@@ -7,8 +7,8 @@ function Parentsome() {
     <div>
       <h3>Some Blog</h3>
       <div className='buttons'>
-        <LikePost/>
         <LikeImage/>
+        <LikePost/>
       </div>
     </div>
   );
